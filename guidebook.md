@@ -1236,13 +1236,15 @@ Now that we have a lot of good information on our page, we need to make it more 
             console.log(this.pageComponents);
         };
 
-        // Get the current component
+        // Initialize a property for the current component.
         this.currentComponent = '';
-
+	
+		// Provide a method to set the curent component.
         this.setCurrent = function(cName){
             this.currentComponent = cName;
         };
 
+		// Provide a method to reset the page manager. Used on "reload" of the page (note that updating the location in the serrvice portal is not the same aserfershing the browser, so the service will be persistent).
         this.reset = function(){
             this.pageComponents = {};
             this.currentComponent = '';
@@ -1258,7 +1260,14 @@ Now that we have a lot of good information on our page, we need to make it more 
     2. Body HTML template:
     ```html
     <div>
+		<!-- If there are no components registered on the page, say so. -->
       <p ng-if="!c.pm.currentComponent">No Components</p>
+		<!-- Here we display a tab for each component registered with our k18PageManager service.
+			We assign an "active" class to the tab if it corresponds to the currentComponent registered with the service.
+			Note that in each list item, we are accessing scope properties directly from the component widgets.
+			In this case, we know something about the components in advance.
+			Can you think of a way to manage this without using properties directly from the component scope?
+			We are using tabs here, but can you think of how you may use this to build a left-hand nav menu? -->
       <ul class="nav nav-tabs">
         <li ng-class="{'active': comp.rectangle_id == c.pm.currentComponent}" ng-repeat="comp in c.pm.pageComponents" ng-click="c.pm.setCurrent(comp.rectangle_id);"><a href="javascript: void(0)">{{ comp.data.title }} <span class="badge" ng-if="!!comp.data.recordCount">{{  comp.data.recordCount  }}</span></a></li>
       </ul>
@@ -1288,17 +1297,34 @@ Now that we have a lot of good information on our page, we need to make it more 
     ```
     4. Client controller
     ```javascript
+	/*
+		Note that we are injecting a dependency for the k18PageManager service.
+		Don't forget to add this dependency to the related list for the widget!
+	*/
     function(k18PageManager,$scope) {
       /* widget controller */
       var c = this;
 
+		// Create a local referernce to the k18PageManager service for convenience and to use in the HTML template.
         c.pm = k18PageManager;
 
         // reset on page load
         c.pm.reset();
 
-        $scope.pc = c.pm.pageComponents;
+        /*
+			Bind the service's pageComponents property to a local scope property.
+			This is mainly for convenience. See how much shorter it is?
+			I'm too lazy to type out the whole thing every time I need to refere to it.
+			
+			It also allows us to use $scope.$watch() to react to changes. Which is useful, too, I guess.
+		*/
+		$scope.pc = c.pm.pageComponents;
 
+		/*
+			Watch for changes to the service's pageComponents property.
+			Note the "true" parameter we are passing into the $watch method.
+			This is because paegComponents is an array, so we need to do a "deep watch" on the entire thing.
+		*/
         $scope.$watch('pc',function(newVal,oldVal){
             // If we do not have a current component, set it to the first one.
             if (Object.keys(c.pm.pageComponents).length > 0 && !c.pm.currentComponent){
