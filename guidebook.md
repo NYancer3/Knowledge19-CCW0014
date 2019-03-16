@@ -1321,7 +1321,9 @@ Now that we have a lot of good information on our page, we need to make it more 
 1. Update the form as follows:
     1. Body HTML template:
     ```html
+	<!--  LAB 4: We are now making the entire widget visible conditional on whether or not it is the currentComponent registered with our Angular service. NOTE: What would happen if we used ng-if heer instead? What would be the impact on performance or user experience? -->
     <div ng-show="c.widget.rectangle_id == c.pm.currentComponent">
+	<!-- END LAB 4 CHANGE -->
       <div class="alert alert-danger" ng-if="data.invalid_table">
         ${Table not defined} '{{data.table_label}}'
       </div>
@@ -1329,93 +1331,149 @@ Now that we have a lot of good information on our page, we need to make it more 
       <toggle-switch watch-var="showTable" title="Chart or Table" label-true="Table" label-false="Chart"></toggle-switch>
       <!-- If showTable is false, show the chart. Note the use of ng-if here. The angular chartJS code checks on the chart at regular intervals.
     If the chart canvas is hidden when that check is performed there is an error and the next time you try to show the chart it will not render correctly. -->
+	<!-- LAB 4: In addition to watching "showTable," we are also making existence conditional on whether the widget is the curentComponent registered with the Angular service -->
       <div ng-if="showTable == false && c.widget.rectangle_id == c.pm.currentComponent">
+	<!-- END LAB 4 CHANGE -->
         <sp-widget ng-if="!!data.donutWidget" widget="data.donutWidget"></sp-widget>
       </div>
 
       <!-- If showTable is true, then show the data table widget. Note that it is okay to use ng-show here,
     as there is no requirement that the data table is visible for other processes. -->
-      <div ng-show="showTable == true">
+      <div ng-show="showTable">
         <sp-widget ng-if="data.dataTableWidget" widget="data.dataTableWidget"></sp-widget>
       </div>
 
-      <sp-widget ng-if="!!formWidget" widget="formWidget"></sp-widget>
+	  <!-- LAB 3: If we have a form widget, embed it. We will instantiate a widget if we click on the data table. -->
+	  <sp-widget ng-if="!!formWidget" widget="formWidget"></sp-widget>
+	  <!-- END LAB 3 CHANGES -->
 
     </div>
     ```
     2. Client Controller:
     ```javascript
-    function ($scope, spUtil, $location, spAriaFocusManager, k18PageManager,$http) {
-        /*$scope.$on('data_table.click', function(e, parms){
-            var p = $scope.data.page_id || 'form';
-            var s = {id: p, table: parms.table, sys_id: parms.sys_id, view: 'sp'};
-            var newURL = $location.search(s);
-            spAriaFocusManager.navigateToLink(newURL.url());
-        });*/
+	/*
+		LAB 4: We are adding dependencies to the k18PageManager service as well as the $http service.
+		Do not forget to add the k18PageManager service to the dependencies related list on the widget!
+	*/
+	function ($scope, spUtil, $location, spAriaFocusManager, k18PageManager,$http) {
+	/* END LAB 4 CHANGES */
 
-        var c = this;
+	/* This is the original code copied from the data table widget */
+	/*
+		LAB 3: We are going to remove the original code for the data_table.click event.
+		We will redefine what happens when the table is clicked.
+	*/
+	/*
+		$scope.$on('data_table.click', function(e, parms){
+			var p = $scope.data.page_id || 'form';
+			var s = {id: p, table: parms.table, sys_id: parms.sys_id, view: 'sp'};
+			var newURL = $location.search(s);
+			spAriaFocusManager.navigateToLink(newURL.url());
+		});
+		*/
+	/* END LAB 3 CHANGES */
 
-        // Get record count to send up to the tabs
-        $scope.data.recordCount = 0;
+	/*
+		LAB 4: This is where we really start interacting with the k18PageManager service.
+		There is not much to it. We are going to create and store a recordCount poroperty in our scope, which will be read by the Page Governor widget we created in the last step.
+		Then, we register the widget with the k18PageManager service. The other widgets will do the rest.
+		Later, we will just need to keep the record count up to date.
+	*/
+		var c = this;
 
-        c.pm = k18PageManager;
+		// Get record count to send up to the tabs
+		$scope.data.recordCount = 0;
 
-        // Register ourselves with the Page Manager service.
-        k18PageManager.registerComponent(this.widget);
+		c.pm = k18PageManager;
 
-        $scope.showTable = false;
+		// Register ourselves with the Page Manager service.
+		k18PageManager.registerComponent(this.widget);
 
-        function getCount(flt){
-            // Told you we would use web services!
-            $http.get('/api/now/table/' + $scope.data.table + '?sysparm_query=' + flt + '&sysparm_fields=sys_id').then(function(resp){
-                $scope.data.recordCount = resp.data.result.length;
-            });
+	/* END LAB 4 CHANGES */
 
-        }
+		/* Here is our code. We are just defining the "showTable" property for $scope. Defaulting to false. */
+		$scope.showTable = false;
 
-        getCount($scope.data.filter);
+	/*
+		LAB 4: Here we define a function to update the record count based on our filter.
+		We use a direct table GET web service call to do the query and update our recordCount property with the result.
+		Then, we call the function.
+	*/
+		function getCount(flt){
+			// Told you we would use web services!
+			$http.get('/api/now/table/' + $scope.data.table + '?sysparm_query=' + flt + '&sysparm_fields=sys_id').then(function(resp){
+				$scope.data.recordCount = resp.data.result.length;
+			});
 
-        // Watch for the chart click event.
-        $scope.$on('chart.click',function(evt,parms){
-            console.log(parms);
-            // Toggle showTable to true to show the table
-            $scope.showTable = true;
-            // Let the table know about the updated filter.
-            $scope.$broadcast('data_table.setFilter',parms.filter);
-        });
+		}
 
-        // When the table is clicked, show the target record in a form modal
+		getCount($scope.data.filter);
+	/* END LAB 4 CHANGES */
 
-        $scope.formWidget = '';
+	/*
+		LAB 3: Everything from here to the end is new code.
+		1. We are going to "watch" for the "chart.click" event emitted by the embedded chart widget.
+		2. We are going to define a "formWidget" property for our current scope. Note that we modified the HTML in the previous step to check for this property.
+		3. We are going to redefine the "watch" on our data_table.click" event.
+		4. We are going to "watch" for an embedded modal's "closed" event.
+	*/
+	// Watch for the chart click event.
+		$scope.$on('chart.click',function(evt,parms){
+			console.log(parms);
+			// Toggle showTable to true to show the table
+			$scope.showTable = true;
+			/*
+				Let the table know about the updated filter.
+				Notice that we are "broadcasting" this "away" from rootScope.
+				This means that we are only notifying the data table that is embedded in this widget (or any of its descendants)
+				If we have multiple instance of this widget on the page (hint-hint!), then this event will not be visible to the other embedded tables.
+				The "setFilter" event is part of the out-of-the-box data table widget code.
+			*/
+			$scope.$broadcast('data_table.setFilter',parms.filter);
+		});
 
-        $scope.$on('data_table.click',function(evt,parms){
-            // Build params to get a form widget
-            var formOpts = {
-                embeddedWidgetId: 'widget-form',
-                embeddedWidgetOptions: {
-                    table: parms.table,
-                    sys_id: parms.sys_id,
-                    view: 'sp',
-                    disableUIActions: 'true',
-                    hideRelatedLists: true
-                }
-            };
+		// When the table is clicked, show the target record in a form modal
+		// Define the formWidget property here, manage it elsewhere.
+		$scope.formWidget = '';
 
-            // Get our widget
-            spUtil.get('widget-modal',formOpts).then(function(resp){
-                $scope.formWidget = resp;
-            });
-        });
+		/*
+			Here we are changing what heppens when the data table is clicked.
+			This event is emitted (sent "toward" rootScope) by the out-of-the box data table widget.
+		*/
+		$scope.$on('data_table.click',function(evt,parms){
+			// Build params to get a form widget
+			var formOpts = {
+				embeddedWidgetId: 'widget-form',
+				embeddedWidgetOptions: {
+					table: parms.table,
+					sys_id: parms.sys_id,
+					view: 'sp',
+					disableUIActions: 'true',
+					hideRelatedLists: true
+				}
+			};
 
-        // Watch for the modal widget being closed
-        $scope.$on('sp.widget-modal.closed',function(){
-            $scope.formWidget = '';
-        });
+			/*
+				Get our widget.
+				spUtil.get returns a "promise." This means it executes asynchronously and will "do something" when the promise "resolves" (is finished).
+				In our case, the result returned from a successful promise is a widget object that can be embedded.
+				When the promise resolves, we will set the formWidget property of our instance's scope to the result.
+				Note that we are not handling any promise failure. How would you do this?
+			*/
+			spUtil.get('widget-modal',formOpts).then(function(resp){
+				$scope.formWidget = resp;
+			});
+		});
 
-        $scope.$watch('showTable',function(newVal){
-            console.log('showTable changed to ' + newVal);
-        },true);
-    }
+		/*
+			Watch for the modal widget being closed.
+			When the modal is closed, we will clear the formWidget property to make the HTML happy.
+		*/
+		$scope.$on('sp.widget-modal.closed',function(){
+			$scope.formWidget = '';
+		});
+	/* END LAB 3 CHANGES */
+	}
     ```
 1. Select **Update**
 1. Locate and open the **Combined Donut and Table** widget you just updated *(note that instead of updating and navigating back, you can always just right-click in the header and select **Save** to stay on the record; but you probably already knew that)*
