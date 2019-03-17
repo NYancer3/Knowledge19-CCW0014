@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2018-03-15 13:03:43">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Includes a page that demonstrates scope inheritance.</description>
+<inserted/>
+<name>CCW0460 0 - Scope Demo Update Set</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>087e57394fec5f002debb7a18110c7a4</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>bea8ba6e4f3c1b402debb7a18110c783</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_0ba26f794fec5f002debb7a18110c7d8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Knowledge 18 Scope Demo - Container 1</name><order>1</order><sp_page display_value="k18_scope_demo">7e726fb94fec5f002debb7a18110c7c5</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:06</sys_created_on><sys_id>0ba26f794fec5f002debb7a18110c7d8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Knowledge 18 Scope Demo - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_0ba26f794fec5f002debb7a18110c7d8</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:06</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-297307623</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>32a8ba6e4f3c1b402debb7a18110c785</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a58970000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>Knowledge 18 Scope Demo - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>8fa26f79dbec5f00b10209a14d8096d9</update_guid>
+<update_guid_history>8fa26f79dbec5f00b10209a14d8096d9:-297307623</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_32774c2f4f8417402debb7a18110c70c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope,$scope,spUtil) {
+	/* widget controller */
+	var c = this;
+	
+	c.child = '';
+	
+	c.countThis = 0;
+	
+	c.rsb = function(){
+		$rootScope.$broadcast('plus.one');
+	};
+	
+	c.sb = function(){
+		$scope.$broadcast('plus.one');
+	};
+	
+	c.se = function(){
+		$scope.$emit('plus.one');
+	};
+	
+	$scope.$on('plus.one',function(evt,args){
+		c.countThis++;
+	});
+	
+	spUtil.get('scope-demo1').then(function(resp){
+		c.child = resp;
+	});
+	
+	$scope.$on('clear.counter',function(evt,args){
+		c.countThis = 0;
+	});
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Main scope demo widget. Includes Scope Demo1.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Scope Demo&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-08 19:56:25&lt;/sys_created_on&gt;&lt;sys_id&gt;32774c2f4f8417402debb7a18110c70c&lt;/sys_id&gt;&lt;sys_mod_count&gt;8&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scope Demo&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_32774c2f4f8417402debb7a18110c70c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-02-28 21:44:24&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;h2&gt;Counter: {{ c.countThis }}&lt;/h2&gt;
+  &lt;button class="btn btn-primary" ng-click="c.rsb()"&gt;RootScope - Broadcast&lt;/button&gt;
+  &lt;button class="btn btn-primary" ng-click="c.sb()"&gt;Scope - Broadcast&lt;/button&gt;
+  &lt;button class="btn btn-primary" ng-click="c.se()"&gt;Scope - Emit&lt;/button&gt;
+
+  &lt;sp-widget ng-if="!!c.child" widget="c.child"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1940835149</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>3aa8ba6e4f3c1b402debb7a18110c786</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de5fa2300000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>Scope Demo</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>f3ffd379e8ec5f00f54af040294692e1</update_guid>
+<update_guid_history>f3ffd379e8ec5f00f54af040294692e1:-1940835149,f8df93790dec5f008f64193d2931933a:-1983995459,c7bc98af47c41740b02cb924c9450a7f:2123357268,2659c0237ec4174028b4722444f9b18b:-1888017881,224900638fc4174058b388fb6eef3448:2041995353,6af84c23e5c41740d476b5a9a3da8a07:1501577712,a5d74cefdf8417404176c3eba07385b6:1593849447,5787c4a720841740d54470e81f414193:-794017926,3a774c2fcc841740838e0c73e5c6100d:2089499472</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_link_5d44cc924fa89f002debb7a18110c7f0</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;danger&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;sitemap&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description&gt;See scope inheritance in action!&lt;/short_description&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;b5ba8872cb20120000f8d856634c9c48&lt;/sp_column&gt;&lt;sp_page display_value="k18_scope_demo"&gt;7e726fb94fec5f002debb7a18110c7c5&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-03-01 19:01:22&lt;/sys_created_on&gt;&lt;sys_id&gt;5d44cc924fa89f002debb7a18110c7f0&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scope Demo Page&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_5d44cc924fa89f002debb7a18110c7f0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-01 19:03:44&lt;/sys_updated_on&gt;&lt;title&gt;Scope Demo Page&lt;/title&gt;&lt;type&gt;page&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "Circle Icon",
+		"displayValue": "Circle Icon"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=5d44cc924fa89f002debb7a18110c7f0"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1660511981</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>3ea8ba6e4f3c1b402debb7a18110c785</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161e2f2e6290000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>Scope Demo Page</target_name>
+<type>Instance with Link</type>
+<update_domain>global</update_domain>
+<update_guid>84d4489268a89f007457ef1f55c305dd</update_guid>
+<update_guid_history>84d4489268a89f007457ef1f55c305dd:-1660511981,1544cc92aea89f003fac22c7a1897ef2:-1538133401</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_a17b44634fc417402debb7a18110c7c3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope,$scope,spUtil) {
+	/* widget controller */
+	var c = this;
+	
+	c.countThis = 0;
+	
+	c.rsb = function(){
+		$rootScope.$broadcast('plus.one');
+	};
+	
+	c.sb = function(){
+		$scope.$broadcast('plus.one');
+	};
+	
+	c.se = function(){
+		$scope.$emit('plus.one');
+	};
+	
+	$scope.$on('plus.one',function(evt,args){
+		c.countThis++;
+	});
+	
+	$scope.$on('clear.counter',function(evt,args){
+		c.countThis = 0;
+	});
+	
+	$scope.addWidget = function(){
+		spUtil.get('scope-demo2').then(function(resp){
+			c.child = resp;
+		});
+	};
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.close-button {&amp;#13;
+  min-height: 1px;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;scope-demo2&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Scope Demo 2&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-08 20:13:48&lt;/sys_created_on&gt;&lt;sys_id&gt;a17b44634fc417402debb7a18110c7c3&lt;/sys_id&gt;&lt;sys_mod_count&gt;15&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scope Demo 2&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a17b44634fc417402debb7a18110c7c3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-03-01 19:10:56&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;h2&gt;Counter: {{ c.countThis }}&lt;/h2&gt;
+  &lt;p&gt;Embedded in another widget&lt;/p&gt;
+  &lt;button class="btn btn-primary" ng-click="c.rsb()"&gt;RootScope - Broadcast&lt;/button&gt;
+  &lt;button class="btn btn-primary" ng-click="c.sb()"&gt;Scope - Broadcast&lt;/button&gt;
+  &lt;button class="btn btn-primary" ng-click="c.se()"&gt;Scope - Emit&lt;/button&gt;
+
+    &lt;div class="col-xs-12" style="margin-top: 8px;"&gt;
+      &lt;button class="btn btn-success" ng-if="!c.child" ng-click="addWidget()"&gt;Add a Child Widget&lt;/button&gt;
+    &lt;/div&gt;
+
+  &lt;div ng-if="!!c.child"&gt;
+    &lt;div class="close-button"&gt;&lt;span class="pull-left" ng-click="c.child = '';"&gt;&lt;i class="fa fa-close"&gt;&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;
+	&lt;sp-widget widget="c.child"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1159674238</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>72a8ba6e4f3c1b402debb7a18110c787</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161e2f97d1e0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>Scope Demo 2</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>25764c564ea89f0087ef134e3bec88e0</update_guid>
+<update_guid_history>25764c564ea89f0087ef134e3bec88e0:-1159674238,b5f54cd241a89f00d4b8fe268e1c49ee:-160174674,35854016e6a89f00277ab192c6d1a3f0:1935044981,f7650892efa89f0020750261f6890738:1173912809,a5554cd267a89f0082dd9812426a43c9:-882584210,4825c0d2b6a89f005d092b7ce648a56c:1348924188,4ba4eff9e4ec5f00ce6767312a4247ba:183633269,d5342ff9abec5f0009dccf39929293e3:-355026635,3b04a3f97aec5f00d797ab3b8533d98f:131388229,a2f36fb9c3ec5f00e2343e7d5d2608ce:200629070,8a4327f997ec5f003aaf2bad971537ac:-1980186924,8ad0e37939ec5f0014c2a04346e74567:1555446406,b99d1423e108174021d67414b7970cb5:-662930215,74bc9caf3dc41740685fd7b9cb8f8dcf:843433682,f89b08a39ac417405c0663f30feae687:-98714875,a97b446390c41740804aee052b89f0c4:-1771806800</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_dab2e7754fec5f002debb7a18110c76d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>2</order><sp_column/><sp_container display_value="Knowledge 18 Scope Demo - Container 1">0ba26f794fec5f002debb7a18110c7d8</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:19</sys_created_on><sys_id>dab2e7754fec5f002debb7a18110c76d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_dab2e7754fec5f002debb7a18110c76d</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:19</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>21735313</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>76a8ba6e4f3c1b402debb7a18110c786</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a8ada0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>dab223f975ec5f00c51bdfbda4058c63</update_guid>
+<update_guid_history>dab223f975ec5f00c51bdfbda4058c63:21735313</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_e6c22b394fec5f002debb7a18110c702</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="2">9eb223f94fec5f002debb7a18110c765</sp_column><sp_widget display_value="Scope Demo">32774c2f4f8417402debb7a18110c70c</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:36</sys_created_on><sys_id>e6c22b394fec5f002debb7a18110c702</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_e6c22b394fec5f002debb7a18110c702</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:36</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=e6c22b394fec5f002debb7a18110c702"/></record_update>]]></payload>
+<payload_hash>1370460906</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>7aa8ba6e4f3c1b402debb7a18110c785</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6accd40000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>6ac223f993ec5f0057664c323a9b79f8</update_guid>
+<update_guid_history>6ac223f993ec5f0057664c323a9b79f8:1370460906</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_9eb223f94fec5f002debb7a18110c765</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>2</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">dab2e7754fec5f002debb7a18110c76d</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:19</sys_created_on><sys_id>9eb223f94fec5f002debb7a18110c765</sys_id><sys_mod_count>0</sys_mod_count><sys_name>2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_9eb223f94fec5f002debb7a18110c765</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:19</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>265097889</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>7ea8ba6e4f3c1b402debb7a18110c784</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a8b090000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>2</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>9ab223f958ec5f00dde83a6b6ff64d66</update_guid>
+<update_guid_history>9ab223f958ec5f00dde83a6b6ff64d66:265097889</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_41b2e3794fec5f002debb7a18110c761</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">41b2e3794fec5f002debb7a18110c75f</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:14</sys_created_on><sys_id>41b2e3794fec5f002debb7a18110c761</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_41b2e3794fec5f002debb7a18110c761</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:14</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>72330368</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>b2a8ba6e4f3c1b402debb7a18110c784</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a75890000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>89b223f904ec5f002e0dc9b0fca30031</update_guid>
+<update_guid_history>89b223f904ec5f002e0dc9b0fca30031:72330368</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_41b2e3794fec5f002debb7a18110c75f</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="Knowledge 18 Scope Demo - Container 1">0ba26f794fec5f002debb7a18110c7d8</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:14</sys_created_on><sys_id>41b2e3794fec5f002debb7a18110c75f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_41b2e3794fec5f002debb7a18110c75f</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:14</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-988882255</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>b2a8ba6e4f3c1b402debb7a18110c786</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a753f0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>45b2e37900ec5f007447638469ec0360</update_guid>
+<update_guid_history>45b2e37900ec5f007447638469ec0360:-988882255</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_a5c2e3794fec5f002debb7a18110c7ab</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">96b223f94fec5f002debb7a18110c764</sp_column><sp_widget display_value="Scope Demo">32774c2f4f8417402debb7a18110c70c</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:32</sys_created_on><sys_id>a5c2e3794fec5f002debb7a18110c7ab</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_a5c2e3794fec5f002debb7a18110c7ab</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:32</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=a5c2e3794fec5f002debb7a18110c7ab"/></record_update>]]></payload>
+<payload_hash>212040185</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>b6a8ba6e4f3c1b402debb7a18110c785</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6abd280000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>2dc223f931ec5f00a88fd96e43b80bc6</update_guid>
+<update_guid_history>2dc223f931ec5f00a88fd96e43b80bc6:212040185</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_96b223f94fec5f002debb7a18110c764</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>6</size><size_lg/><size_sm/><size_xs/><sp_row display_value="2">dab2e7754fec5f002debb7a18110c76d</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:19</sys_created_on><sys_id>96b223f94fec5f002debb7a18110c764</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_96b223f94fec5f002debb7a18110c764</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:19</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1625201183</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>baa8ba6e4f3c1b402debb7a18110c784</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a8af00000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>d2b223f990ec5f00e67913e2cb9f3e65</update_guid>
+<update_guid_history>d2b223f990ec5f00e67913e2cb9f3e65:1625201183</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_88f58caf4f8417402debb7a18110c72c</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($rootScope,$scope,spUtil) {
+	/* widget controller */
+	var c = this;
+	
+	c.countThis = 0;
+	
+	c.rsb = function(){
+		$rootScope.$broadcast('plus.one');
+	};
+	
+	c.sb = function(){
+		$scope.$broadcast('plus.one');
+	};
+	
+	c.se = function(){
+		$scope.$emit('plus.one');
+	};
+	
+	$scope.$on('plus.one',function(evt,args){
+		c.countThis++;
+	});
+	
+	c.child = '';
+	
+	spUtil.get('scope-demo2').then(function(resp){
+		c.child = resp;
+	});
+	
+	$scope.$on('clear.counter',function(evt,args){
+		c.countThis = 0;
+	});
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Embedded in the main scope demo widget. Includes an embedded widget that allows you to add a child widget.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;scope-demo1&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Scope Demo 1&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-08 19:55:56&lt;/sys_created_on&gt;&lt;sys_id&gt;88f58caf4f8417402debb7a18110c72c&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scope Demo 1&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_88f58caf4f8417402debb7a18110c72c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-02-28 21:42:57&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;h2&gt;Counter: {{ c.countThis }}&lt;/h2&gt;
+  &lt;p&gt;Embedded in Scope Demo widget&lt;/p&gt;
+  &lt;button class="btn btn-primary" ng-click="c.rsb()"&gt;RootScope - Broadcast&lt;/button&gt;
+  &lt;button class="btn btn-primary" ng-click="c.sb()"&gt;Scope - Broadcast&lt;/button&gt;
+  &lt;button class="btn btn-primary" ng-click="c.se()"&gt;Scope - Emit&lt;/button&gt;
+  
+  &lt;sp-widget ng-if="!!c.child" widget="c.child"&gt;&lt;/sp-widget&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>210126249</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>bea8ba6e4f3c1b402debb7a18110c786</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de5e4c040000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>Scope Demo 1</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>16af53794cec5f001e4b170102e2094d</update_guid>
+<update_guid_history>16af53794cec5f001e4b170102e2094d:210126249,1d8ddcef7ac41740693fc55f79b3343a:-1913883096,7eac9caf9dc41740042ba67e28c1075e:-336257879,003ccca3bdc41740306e521bd53a5847:1621460764,3ffb48a388c41740999d6e8eb430821d:581663676,3b790063ffc41740a3883f588087030e:807242886,3757006fd3841740b2ca85651ed7d943:-736814128</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_3fb2ef794fec5f002debb7a18110c726</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">41b2e3794fec5f002debb7a18110c761</sp_column><sp_widget display_value="Scope Demo 3">570a84634fc417402debb7a18110c750</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:56:25</sys_created_on><sys_id>3fb2ef794fec5f002debb7a18110c726</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_3fb2ef794fec5f002debb7a18110c726</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:56:25</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=3fb2ef794fec5f002debb7a18110c726"/></record_update>]]></payload>
+<payload_hash>1321511788</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>f2a8ba6e4f3c1b402debb7a18110c785</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6aa1920000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>b7b2ef7924ec5f00673aabd5e63e2828</update_guid>
+<update_guid_history>b7b2ef7924ec5f00673aabd5e63e2828:1321511788</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_570a84634fc417402debb7a18110c750</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function($scope,$rootScope) {
+  /* widget controller */
+  var c = this;
+	
+	c.countThis = 0;
+	
+	$scope.$on('plus.one',function(evt,args){
+		c.countThis++;
+	});
+	
+	$scope.$on('clear.counter',function(evt,args){
+		c.countThis = 0;
+	});
+	
+	c.clearAll = function(){
+		$rootScope.$broadcast('clear.counter');
+	};
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;No embedded widgets. Used to show the effect of rootScope events.&lt;/description&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Scope Demo 3&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2018-02-08 20:09:55&lt;/sys_created_on&gt;&lt;sys_id&gt;570a84634fc417402debb7a18110c750&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Scope Demo 3&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_570a84634fc417402debb7a18110c750&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2018-02-28 21:48:46&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+  &lt;h2&gt;Counter: {{ c.countThis }}&lt;/h2&gt;
+  &lt;p&gt;Unrelated widget, will only get events from rootScope&lt;/p&gt;
+  &lt;button class="btn btn-danger" ng-click="c.clearAll()"&gt;Reset&lt;/button&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1033928885</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>faa8ba6e4f3c1b402debb7a18110c786</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de63a0050000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>Scope Demo 3</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>6bf0637994ec5f00ed64700e23b78252</update_guid>
+<update_guid_history>6bf0637994ec5f00ed64700e23b78252:1033928885,730d90ef12c41740b6fa431944c556eb:-166398332,36ec9caf75c417407bb356cdb9d0c2a4:1225402180,d29cdca317c41740b113da12bd53c01b:1700929126,0f7c10a75bc41740128a2723707583ac:-1211809758,209a04633bc4174050f47d5689f69494:96228208</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_7e726fb94fec5f002debb7a18110c7c5</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>k18_scope_demo</id><internal>false</internal><public>false</public><roles/><short_description>Used to show how scope inheritance works</short_description><sys_class_name>sp_page</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2018-02-28 21:55:51</sys_created_on><sys_id>7e726fb94fec5f002debb7a18110c7c5</sys_id><sys_mod_count>0</sys_mod_count><sys_name>k18_scope_demo</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_7e726fb94fec5f002debb7a18110c7c5</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2018-02-28 21:55:51</sys_updated_on><title>Knowledge 18 Scope Demo</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=7e726fb94fec5f002debb7a18110c7c5"/></record_update>]]></payload>
+<payload_hash>2018442204</payload_hash>
+<remote_update_set display_value="CCW0460 0 - Scope Demo Update Set">bea8ba6e4f3c1b402debb7a18110c783</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2018-03-15 13:03:43</sys_created_on>
+<sys_id>fea8ba6e4f3c1b402debb7a18110c785</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>161de6a1cc60000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2018-03-15 13:03:43</sys_updated_on>
+<table/>
+<target_name>k18_scope_demo</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>23926379ecec5f00bdd45cd3a399f156</update_guid>
+<update_guid_history>23926379ecec5f00bdd45cd3a399f156:2018442204</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,0 +1,880 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-17 20:20:43">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This update set contains all of the artifacts you shoud have after completing Lab 4.</description>
+<inserted/>
+<name>CCW0014 4 - Lab 4 Content</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>5756d6700fd8f7004e0b489ce1050e7c</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>c62cd6740fd8f7004e0b489ce1050ee2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_58b61e700fd8f7004e0b489ce1050e39</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;location&lt;/display_field&gt;&lt;field_list&gt;name,ip_address,short_description,location,operational_status&lt;/field_list&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;10&lt;/maximum_entries&gt;&lt;order&gt;2&lt;/order&gt;&lt;order_by&gt;name&lt;/order_by&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;81e98e340f98f7004e0b489ce1050e3d&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Combined Donut and Table"&gt;958f823c0f98f7004e0b489ce1050e2f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 19:56:50&lt;/sys_created_on&gt;&lt;sys_id&gt;58b61e700fd8f7004e0b489ce1050e39&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Network Gear&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_58b61e700fd8f7004e0b489ce1050e39&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 19:58:21&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_netgear&lt;/table&gt;&lt;title&gt;Network Gear&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"donut_cutout_percent": {
+		"value": 50,
+		"displayValue": "50"
+	},
+	"arc_percent": {
+		"value": 100,
+		"displayValue": "100"
+	},
+	"rotation_offset": {
+		"value": 0,
+		"displayValue": "0"
+	},
+	"animation_speed": {
+		"value": "1250",
+		"displayValue": "1250"
+	},
+	"target_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"event_driven": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=58b61e700fd8f7004e0b489ce1050e39"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-959697886</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>022cd6740fd8f7004e0b489ce1050ee4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d3bd06b0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table>cmdb_ci_netgear</table>
+<target_name>Network Gear</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>ae0712b052d8f70093ed05514b771649</update_guid>
+<update_guid_history>ae0712b052d8f70093ed05514b771649:-959697886,dcb61e7085d8f70033669648b5b0063a:-124744905</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_b96a52740fd8f7004e0b489ce1050ee1</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">f96a52740fd8f7004e0b489ce1050edf</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 20:13:03</sys_created_on><sys_id>b96a52740fd8f7004e0b489ce1050ee1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_b96a52740fd8f7004e0b489ce1050ee1</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:13:03</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>2050522813</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>062cd6740fd8f7004e0b489ce1050ee3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d4946a20000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>f96a527478d8f700f4563b52ded3cae2</update_guid>
+<update_guid_history>f96a527478d8f700f4563b52ded3cae2:2050522813</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_f96a52740fd8f7004e0b489ce1050edf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="CMDB Dashboard - Container 1">996a9a340fd8f7004e0b489ce1050ef3</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 20:13:03</sys_created_on><sys_id>f96a52740fd8f7004e0b489ce1050edf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_f96a52740fd8f7004e0b489ce1050edf</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:13:03</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>1946530766</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>0e2cd6740fd8f7004e0b489ce1050ee4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d49467f0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>bd6a5274b4d8f7004c6250e8afc99be0</update_guid>
+<update_guid_history>bd6a5274b4d8f7004c6250e8afc99be0:1946530766</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_angular_provider_3c981ef00fd8f7004e0b489ce1050efe</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_angular_provider"&gt;&lt;sp_angular_provider action="INSERT_OR_UPDATE"&gt;&lt;name&gt;k19PageManager&lt;/name&gt;&lt;script&gt;&lt;![CDATA[function(){
+
+    // Keep track of all the components on the page
+    this.pageComponents = {};
+
+    // Provide an option for adding to the page components
+    this.registerComponent = function(cObj){
+        console.log(cObj);
+        this.pageComponents[cObj.rectangle_id] = cObj;
+        console.log(this.pageComponents);
+    };
+
+    // Initialize a property for the current component.
+    this.currentComponent = '';
+
+	// Provide a method to set the curent component.
+    this.setCurrent = function(cName){
+        this.currentComponent = cName;
+    };
+
+	// Provide a method to reset the page manager. Used on "reload" of the page (note that updating the location in the serrvice portal is not the same aserfershing the browser, so the service will be persistent).
+    this.reset = function(){
+        this.pageComponents = {};
+        this.currentComponent = '';
+    };
+
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sp_angular_provider&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 20:07:25&lt;/sys_created_on&gt;&lt;sys_id&gt;3c981ef00fd8f7004e0b489ce1050efe&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;k19PageManager&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_angular_provider_3c981ef00fd8f7004e0b489ce1050efe&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 20:07:25&lt;/sys_updated_on&gt;&lt;type&gt;service&lt;/type&gt;&lt;/sp_angular_provider&gt;&lt;/record_update&gt;</payload>
+<payload_hash>389363480</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>422cd6740fd8f7004e0b489ce1050ee3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d441f130000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>k19PageManager</target_name>
+<type>Widget Angular Provider</type>
+<update_domain>global</update_domain>
+<update_guid>d3191af084d8f70045dacc313ae2ef27</update_guid>
+<update_guid_history>d3191af084d8f70045dacc313ae2ef27:389363480</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_c57796700fd8f7004e0b489ce1050ef8</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;busines_criticality&lt;/display_field&gt;&lt;field_list&gt;name,short_description,operational_status,busines_criticality&lt;/field_list&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;10&lt;/maximum_entries&gt;&lt;order&gt;4&lt;/order&gt;&lt;order_by&gt;name&lt;/order_by&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;81e98e340f98f7004e0b489ce1050e3d&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Combined Donut and Table"&gt;958f823c0f98f7004e0b489ce1050e2f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 20:00:09&lt;/sys_created_on&gt;&lt;sys_id&gt;c57796700fd8f7004e0b489ce1050ef8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Business Services&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_c57796700fd8f7004e0b489ce1050ef8&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 20:01:23&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_service&lt;/table&gt;&lt;title&gt;Business Services&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"donut_cutout_percent": {
+		"value": 0,
+		"displayValue": "0"
+	},
+	"arc_percent": {
+		"value": 100,
+		"displayValue": "100"
+	},
+	"rotation_offset": {
+		"value": 0,
+		"displayValue": "0"
+	},
+	"animation_speed": {
+		"value": "500",
+		"displayValue": "500"
+	},
+	"target_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"event_driven": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c57796700fd8f7004e0b489ce1050ef8"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>666439247</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>4a2cd6740fd8f7004e0b489ce1050ee4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d3e96e70000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table>cmdb_ci_service</table>
+<target_name>Business Services</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>7ab756b0d7d8f700b561fc220cad022b</update_guid>
+<update_guid_history>7ab756b0d7d8f700b561fc220cad022b:666439247,4d77967054d8f7002987cfc105323ef9:-1295225867</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_cc7a5af00fd8f7004e0b489ce1050ec3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance"><sp_instance action="INSERT_OR_UPDATE"><active>true</active><class_name/><color>default</color><css/><glyph/><id/><order>1</order><roles/><short_description/><size>md</size><sp_column display_value="1">b96a52740fd8f7004e0b489ce1050ee1</sp_column><sp_widget display_value="Page Governor">212992340fd8f7004e0b489ce1050ea3</sp_widget><sys_class_name>sp_instance</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 20:13:12</sys_created_on><sys_id>cc7a5af00fd8f7004e0b489ce1050ec3</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_instance_cc7a5af00fd8f7004e0b489ce1050ec3</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:13:12</sys_updated_on><title/><url/><widget_parameters/></sp_instance><sys_translated_text action="delete_multiple" query="documentkey=cc7a5af00fd8f7004e0b489ce1050ec3"/></record_update>]]></payload>
+<payload_hash>-1917251658</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>4e2cd6740fd8f7004e0b489ce1050ee3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d49686c0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name/>
+<type>Instance</type>
+<update_domain>global</update_domain>
+<update_guid>487a5af048d8f700ba537f03290336c5</update_guid>
+<update_guid_history>487a5af048d8f700ba537f03290336c5:-1917251658</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_958f823c0f98f7004e0b489ce1050e2f</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function ($scope, spUtil, $location, spAriaFocusManager, k19PageManager,$http) {
+/*
+	LAB 4: We are adding dependencies to the k19PageManager service as well as the $http service.
+	Do not forget to add the k19PageManager service to the dependencies related list on the widget!
+*/
+/* END LAB 4 CHANGES */
+
+/* This is the original code copied from the data table widget */
+/*
+	LAB 3: We are going to remove the original code for the data_table.click event.
+	We will redefine what happens when the table is clicked.
+*/
+/*
+	$scope.$on('data_table.click', function(e, parms){
+		var p = $scope.data.page_id || 'form';
+		var s = {id: p, table: parms.table, sys_id: parms.sys_id, view: 'sp'};
+		var newURL = $location.search(s);
+		spAriaFocusManager.navigateToLink(newURL.url());
+	});
+	*/
+/* END LAB 3 CHANGES */
+
+/*
+	LAB 4: This is where we really start interacting with the k19PageManager service.
+	There is not much to it. We are going to create and store a recordCount poroperty in our scope, which will be read by the Page Governor widget we created in the last step.
+	Then, we register the widget with the k19PageManager service. The other widgets will do the rest.
+	Later, we will just need to keep the record count up to date.
+*/
+	var c = this;
+
+	// Get record count to send up to the tabs
+	$scope.data.recordCount = 0;
+
+	c.pm = k19PageManager;
+
+	// Register ourselves with the Page Manager service.
+	k19PageManager.registerComponent(this.widget);
+
+/* END LAB 4 CHANGES */
+
+	/* Here is our code. We are just defining the "showTable" property for $scope. Defaulting to false. */
+	$scope.showTable = false;
+
+/*
+	LAB 4: Here we define a function to update the record count based on our filter.
+	We use a direct table GET web service call to do the query and update our recordCount property with the result.
+	Then, we call the function.
+*/
+	function getCount(flt){
+		// Told you we would use web services!
+		$http.get('/api/now/table/' + $scope.data.table + '?sysparm_query=' + flt + '&amp;sysparm_fields=sys_id').then(function(resp){
+			$scope.data.recordCount = resp.data.result.length;
+		});
+
+	}
+
+	getCount($scope.data.filter);
+/* END LAB 4 CHANGES */
+
+/*
+	LAB 3: Everything from here to the end is new code.
+	1. We are going to "watch" for the "chart.click" event emitted by the embedded chart widget.
+	2. We are going to define a "formWidget" property for our current scope. Note that we modified the HTML in the previous step to check for this property.
+	3. We are going to redefine the "watch" on our data_table.click" event.
+	4. We are going to "watch" for an embedded modal's "closed" event.
+*/
+// Watch for the chart click event.
+	$scope.$on('chart.click',function(evt,parms){
+		console.log(parms);
+		// Toggle showTable to true to show the table
+		$scope.showTable = true;
+		/*
+			Let the table know about the updated filter.
+			Notice that we are "broadcasting" this "away" from rootScope.
+			This means that we are only notifying the data table that is embedded in this widget (or any of its descendants)
+			If we have multiple instance of this widget on the page (hint-hint!), then this event will not be visible to the other embedded tables.
+			The "setFilter" event is part of the out-of-the-box data table widget code.
+		*/
+		$scope.$broadcast('data_table.setFilter',parms.filter);
+	});
+
+	// When the table is clicked, show the target record in a form modal
+	// Define the formWidget property here, manage it elsewhere.
+	$scope.formWidget = '';
+
+	/*
+		Here we are changing what heppens when the data table is clicked.
+		This event is emitted (sent "toward" rootScope) by the out-of-the box data table widget.
+	*/
+	$scope.$on('data_table.click',function(evt,parms){
+		// Build params to get a form widget
+		var formOpts = {
+			embeddedWidgetId: 'widget-form',
+			embeddedWidgetOptions: {
+				table: parms.table,
+				sys_id: parms.sys_id,
+				view: 'sp',
+				disableUIActions: 'true',
+				hideRelatedLists: true
+			}
+		};
+
+		/*
+			Get our widget.
+			spUtil.get returns a "promise." This means it executes asynchronously and will "do something" when the promise "resolves" (is finished).
+			In our case, the result returned from a successful promise is a widget object that can be embedded.
+			When the promise resolves, we will set the formWidget property of our instance's scope to the result.
+			Note that we are not handling any promise failure. How would you do this?
+		*/
+		spUtil.get('widget-modal',formOpts).then(function(resp){
+			$scope.formWidget = resp;
+		});
+	});
+
+	/*
+		Watch for the modal widget being closed.
+		When the modal is closed, we will clear the formWidget property to make the HTML happy.
+	*/
+	$scope.$on('sp.widget-modal.closed',function(){
+		$scope.formWidget = '';
+	});
+/* END LAB 3 CHANGES */
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance_table&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description&gt;Embeds the data table and donut chart in a single widget&lt;/description&gt;&lt;docs/&gt;&lt;field_list&gt;table,filter,field_list,maximum_entries,order_by,order_direction,title,color,glyph,sp_page,display_field&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Combined Donut and Table&lt;/name&gt;&lt;option_schema&gt;[&amp;#13;
+	{&amp;#13;
+		"hint":"Size of the \"donut hole,\" default is 50%",&amp;#13;
+		"name":"donut_cutout_percent",&amp;#13;
+		"section":"Presentation",&amp;#13;
+		"label":"Donut Cutout Percent",&amp;#13;
+		"type":"integer"&amp;#13;
+	},&amp;#13;
+	{&amp;#13;
+		"hint":"Percent of a circle the chart should consume. Min 25%",&amp;#13;
+		"name":"arc_percent",&amp;#13;
+		"section":"Presentation",&amp;#13;
+		"label":"Arc Percent",&amp;#13;
+		"type":"integer"&amp;#13;
+	},&amp;#13;
+	{&amp;#13;
+		"hint":"Percentage to rotate the chart from 0 degrees vertical",&amp;#13;
+		"name":"rotation_offset",&amp;#13;
+		"section":"Presentation",&amp;#13;
+		"label":"Rotation Offset",&amp;#13;
+		"type":"integer"&amp;#13;
+	},&amp;#13;
+	{&amp;#13;
+		"hint":"Number of milliseconds it takes to animate the chart",&amp;#13;
+		"name":"animation_speed",&amp;#13;
+		"section":"Presentation",&amp;#13;
+		"label":"Animation Speed",&amp;#13;
+		"type":"choice",&amp;#13;
+		"choices":[&amp;#13;
+			{&amp;#13;
+				"label":"0",&amp;#13;
+				"value":"0"&amp;#13;
+			},&amp;#13;
+			{&amp;#13;
+				"label":"500",&amp;#13;
+				"value":"500"&amp;#13;
+			},&amp;#13;
+			{&amp;#13;
+				"label":"750",&amp;#13;
+				"value":"750"&amp;#13;
+			},&amp;#13;
+			{&amp;#13;
+				"label":"1000",&amp;#13;
+				"value":"1000"&amp;#13;
+			},&amp;#13;
+			{&amp;#13;
+				"label":"1250",&amp;#13;
+				"value":"1250"&amp;#13;
+			},&amp;#13;
+			{&amp;#13;
+				"label":"1500",&amp;#13;
+				"value":"1500"&amp;#13;
+			}&amp;#13;
+		]&amp;#13;
+	},&amp;#13;
+	{&amp;#13;
+		"hint":"Identify the page to target when the chart is clicked. Default is \"list\"",&amp;#13;
+		"name":"target_page",&amp;#13;
+		"section":"Behavior",&amp;#13;
+		"label":"Target Page",&amp;#13;
+		"type":"string"&amp;#13;
+	},{&amp;#13;
+		"hint":"Indicate whether you want to emit an event when the chart is clicked or navigate to another page",&amp;#13;
+		"name":"event_driven",&amp;#13;
+		"section":"Behavior",&amp;#13;
+		"label":"Event Driven",&amp;#13;
+		"type":"boolean"&amp;#13;
+	}&amp;#13;
+]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function(){
+	/*  "use strict"; - linter issues */
+	// populate the 'data' object
+	var sp_page = $sp.getValue('sp_page');
+	var pageGR = new GlideRecord('sp_page');
+	pageGR.get(sp_page);
+	data.page_id = pageGR.getValue("id");
+	$sp.getValues(data);
+	if (data.field_list) {
+		data.fields_array = data.field_list.split(',');
+	} else {
+		data.field_list = $sp.getListColumns(data.table);
+	}
+	
+	if (input) {
+		data.p = input.p;
+		data.o = input.o;
+		data.d = input.d;
+		data.q = input.q;
+	}
+	data.p = data.p || 1;
+	data.o = data.o || $sp.getValue('order_by');
+	data.d = data.d || $sp.getValue('order_direction');
+	
+	data.page_index = (data.p - 1);
+	data.window_size = $sp.getValue('maximum_entries') || 10;
+	data.window_start  = (data.page_index * data.window_size);
+	data.window_end = (((data.page_index + 1) * data.window_size));
+	data.filter = $sp.getValue("filter");
+	
+	var gr = new GlideRecordSecure(data.table);
+	if (!gr.isValid()) {
+		data.invalid_table = true;
+		data.table_label = data.table;
+		return;
+	}
+	data.table_label = gr.getLabel();
+	
+	// This is where our code begins.
+	// First we will build an object to feed in the options for our data table widget.
+	// The options we define for this widget instance are a combination of the options needed for the data table and donut chart
+	var widgetParams = {
+		table: data.table,
+		fields: data.field_list,
+		o: data.o,
+		d: data.d,
+		filter: data.filter,
+		window_size: data.window_size,
+		view: 'sp',
+		title: options.title,
+		show_breadcrumbs: true
+	};
+	
+	// Now we will use the server-side getWidget method to get a data table widget we can embed
+	data.dataTableWidget = $sp.getWidget('widget-data-table', widgetParams);
+	
+	// We will do the same for the donut chart widget. Build an object to feed in the options
+	var donutParms = {
+		table: data.table,
+		filter: data.filter,
+		display_field: data.display_field
+	};
+	
+	// Copy options from the current widget instance to feed into our embedded widget
+	for (var opt in options){
+		donutParms[opt] = options[opt];
+	}
+	
+	// Now get the donut chart widget to embed
+	data.donutWidget = $sp.getWidget('donut-chart-20',donutParms);
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 19:25:30&lt;/sys_created_on&gt;&lt;sys_id&gt;958f823c0f98f7004e0b489ce1050e2f&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Combined Donut and Table&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_958f823c0f98f7004e0b489ce1050e2f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 20:12:18&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;!--  LAB 4: We are now making the entire widget visible conditional on whether or not it is the currentComponent registered with our Angular service. NOTE: What would happen if we used ng-if heer instead? What would be the impact on performance or user experience? --&gt;
+&lt;div ng-show="c.widget.rectangle_id == c.pm.currentComponent"&gt;
+&lt;!-- END LAB 4 CHANGE --&gt;
+  &lt;div class="alert alert-danger" ng-if="data.invalid_table"&gt;
+    ${Table not defined} '{{data.table_label}}'
+  &lt;/div&gt;
+  &lt;!-- Toggle between chart and table view. The toggle will set the value of the showTable variable to true or false when clicked. --&gt;
+  &lt;toggle-switch watch-var="showTable" title="Chart or Table" label-true="Table" label-false="Chart"&gt;&lt;/toggle-switch&gt;
+  &lt;!-- If showTable is false, show the chart. Note the use of ng-if here. The angular chartJS code checks on the chart at regular intervals.
+If the chart canvas is hidden when that check is performed there is an error and the next time you try to show the chart it will not render correctly. --&gt;
+&lt;!-- LAB 4: In addition to watching "showTable," we are also making existence conditional on whether the widget is the curentComponent registered with the Angular service --&gt;
+  &lt;div ng-if="showTable == false &amp;&amp; c.widget.rectangle_id == c.pm.currentComponent"&gt;
+&lt;!-- END LAB 4 CHANGE --&gt;
+    &lt;sp-widget ng-if="!!data.donutWidget" widget="data.donutWidget"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+
+  &lt;!-- If showTable is true, then show the data table widget. Note that it is okay to use ng-show here,
+as there is no requirement that the data table is visible for other processes. --&gt;
+  &lt;div ng-show="showTable"&gt;
+    &lt;sp-widget ng-if="data.dataTableWidget" widget="data.dataTableWidget"&gt;&lt;/sp-widget&gt;
+  &lt;/div&gt;
+
+  &lt;!-- LAB 3: If we have a form widget, embed it. We will instantiate a widget if we click on the data table. --&gt;
+  &lt;sp-widget ng-if="!!formWidget" widget="formWidget"&gt;&lt;/sp-widget&gt;
+  &lt;!-- END LAB 3 CHANGES --&gt;
+
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1700553758</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>822cd6740fd8f7004e0b489ce1050ee5</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d4897500000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>Combined Donut and Table</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>323a1e3463d8f70054ebd15f1f1e4e36</update_guid>
+<update_guid_history>323a1e3463d8f70054ebd15f1f1e4e36:-1700553758,ec455a3021d8f700e688c8f822674cd9:2017231110,b1a4d230c6d8f7000791c65ff0e06283:-129613080,3e331e7cf498f7004be852334e91f4fa:-468000070,3730de3c9798f7002f68ee209785587a:62380655,d98f823c9f98f7000fbfd79a6ce82630:1553971575</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_bb60527c0f98f7004e0b489ce1050edb</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;os&lt;/display_field&gt;&lt;field_list&gt;name,os,short_description,operational_status&lt;/field_list&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;10&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by&gt;name&lt;/order_by&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;81e98e340f98f7004e0b489ce1050e3d&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Combined Donut and Table"&gt;958f823c0f98f7004e0b489ce1050e2f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 19:29:30&lt;/sys_created_on&gt;&lt;sys_id&gt;bb60527c0f98f7004e0b489ce1050edb&lt;/sys_id&gt;&lt;sys_mod_count&gt;3&lt;/sys_mod_count&gt;&lt;sys_name&gt;All Servers&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_bb60527c0f98f7004e0b489ce1050edb&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 19:56:33&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_server&lt;/table&gt;&lt;title&gt;All Servers&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"donut_cutout_percent": {
+		"value": 25,
+		"displayValue": "25"
+	},
+	"arc_percent": {
+		"value": 50,
+		"displayValue": "50"
+	},
+	"rotation_offset": {
+		"value": 25,
+		"displayValue": "25"
+	},
+	"animation_speed": {
+		"value": "750",
+		"displayValue": "750"
+	},
+	"target_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"event_driven": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=bb60527c0f98f7004e0b489ce1050edb"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>1321916384</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>862cd6740fd8f7004e0b489ce1050ee4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d3a2aba0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table>cmdb_ci_server</table>
+<target_name>All Servers</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>04a65e70d4d8f7009ca49a347a8786a8</update_guid>
+<update_guid_history>04a65e70d4d8f7009ca49a347a8786a8:1321916384,07e5927029d8f70035c7c1d57c5ebe43:-760977795,4cc0963ce798f700794d1cc61671b01e:484561752,ff60527cde98f70080c3c8deb9f75edc:-1686988072</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_996a9a340fd8f7004e0b489ce1050ef3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CMDB Dashboard - Container 1</name><order>1</order><sp_page display_value="k19_cmdb_dashboard">b9990ef40f98f7004e0b489ce1050eaf</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 20:13:01</sys_created_on><sys_id>996a9a340fd8f7004e0b489ce1050ef3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CMDB Dashboard - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_996a9a340fd8f7004e0b489ce1050ef3</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:13:01</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1599963968</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>8a2cd6740fd8f7004e0b489ce1050ee3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d493de30000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>CMDB Dashboard - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>9d6a9a340ad8f700015f9e481616c6f4</update_guid>
+<update_guid_history>9d6a9a340ad8f700015f9e481616c6f4:1599963968</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_e5f9da340fd8f7004e0b489ce1050efc</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="k19PageManager">3c981ef00fd8f7004e0b489ce1050efe</sp_angular_provider><sp_widget display_value="Page Governor">212992340fd8f7004e0b489ce1050ea3</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 20:11:07</sys_created_on><sys_id>e5f9da340fd8f7004e0b489ce1050efc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>k19PageManager.Page Governor</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_e5f9da340fd8f7004e0b489ce1050efc</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:11:07</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>-1050410597</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>8e2cd6740fd8f7004e0b489ce1050ee2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d4781610000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>k19PageManager.Page Governor</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>edf9da3435d8f700f46bc0e5d64006fd</update_guid>
+<update_guid_history>edf9da3435d8f700f46bc0e5d64006fd:-1050410597</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_96175a300fd8f7004e0b489ce1050e9d</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;sys_class_name&lt;/display_field&gt;&lt;field_list&gt;name,short_description,operational_status,version,sys_class_name&lt;/field_list&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;10&lt;/maximum_entries&gt;&lt;order&gt;3&lt;/order&gt;&lt;order_by&gt;name&lt;/order_by&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;81e98e340f98f7004e0b489ce1050e3d&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Combined Donut and Table"&gt;958f823c0f98f7004e0b489ce1050e2f&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 19:58:36&lt;/sys_created_on&gt;&lt;sys_id&gt;96175a300fd8f7004e0b489ce1050e9d&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Applications&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_96175a300fd8f7004e0b489ce1050e9d&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 19:59:44&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_appl&lt;/table&gt;&lt;title&gt;Applications&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"donut_cutout_percent": {
+		"value": 90,
+		"displayValue": "90"
+	},
+	"arc_percent": {
+		"value": 100,
+		"displayValue": "100"
+	},
+	"rotation_offset": {
+		"value": 0,
+		"displayValue": "0"
+	},
+	"animation_speed": {
+		"value": "1500",
+		"displayValue": "1500"
+	},
+	"target_page": {
+		"value": "",
+		"displayValue": ""
+	},
+	"event_driven": {
+		"value": "true",
+		"displayValue": "true"
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=96175a300fd8f7004e0b489ce1050e9d"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>268922634</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>c22cd6740fd8f7004e0b489ce1050ee4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d3d15240000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table>cmdb_ci_appl</table>
+<target_name>Applications</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>b2575e7058d8f7003e41fa3b4cc1b558</update_guid>
+<update_guid_history>b2575e7058d8f7003e41fa3b4cc1b558:268922634,1e175a300ed8f7003bf331a6616b349e:1437498262</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_20e9c2380f98f7004e0b489ce1050e58</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CMDB Dashboard - Container 2</name><order>2</order><sp_page display_value="k19_cmdb_dashboard">b9990ef40f98f7004e0b489ce1050eaf</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 19:00:52</sys_created_on><sys_id>20e9c2380f98f7004e0b489ce1050e58</sys_id><sys_mod_count>1</sys_mod_count><sys_name>CMDB Dashboard - Container 2</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_20e9c2380f98f7004e0b489ce1050e58</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:13:01</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>-1970440577</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>c62cd6740fd8f7004e0b489ce1050ee3</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d493e100000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>CMDB Dashboard - Container 2</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>116a9a346dd8f70009f14500c12f83f7</update_guid>
+<update_guid_history>116a9a346dd8f70009f14500c12f83f7:-1970440577,e4e9c238cc98f700b9146ec83f5cfc59:1599963968</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_ng_pro_sp_widget_574a1e340fd8f7004e0b489ce1050eb4</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget"><m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE"><sp_angular_provider display_value="k19PageManager">3c981ef00fd8f7004e0b489ce1050efe</sp_angular_provider><sp_widget display_value="Combined Donut and Table">958f823c0f98f7004e0b489ce1050e2f</sp_widget><sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 20:12:36</sys_created_on><sys_id>574a1e340fd8f7004e0b489ce1050eb4</sys_id><sys_mod_count>0</sys_mod_count><sys_name>k19PageManager.Combined Donut and Table</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_ng_pro_sp_widget_574a1e340fd8f7004e0b489ce1050eb4</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 20:12:36</sys_updated_on></m2m_sp_ng_pro_sp_widget></record_update>]]></payload>
+<payload_hash>217202746</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>ca2cd6740fd8f7004e0b489ce1050ee2</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d48de850000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>k19PageManager.Combined Donut and Table</target_name>
+<type>Angular Providers</type>
+<update_domain>global</update_domain>
+<update_guid>9b4a1e34d2d8f700118ccfa924d847b5</update_guid>
+<update_guid_history>9b4a1e34d2d8f700118ccfa924d847b5:217202746</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_212992340fd8f7004e0b489ce1050ea3</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function(k19PageManager,$scope) {
+	/*
+	Note that we are injecting a dependency for the k19PageManager service.
+	Don't forget to add this dependency to the related list for the widget!
+ 	*/
+	/* widget controller */
+	var c = this;
+	
+	// Create a local reference to the k19PageManager service for convenience and to use in the HTML template.
+	c.pm = k19PageManager;
+	
+	// reset on page load
+	c.pm.reset();
+	
+	/*
+	Bind the service's pageComponents property to a local scope property.
+	This is mainly for convenience. See how much shorter it is?
+	I'm too lazy to type out the whole thing every time I need to refere to it.
+	
+	It also allows us to use $scope.$watch() to react to changes. Which is useful, too, I guess.
+ 	*/
+	$scope.pc = c.pm.pageComponents;
+	
+	/*
+	Watch for changes to the service's pageComponents property.
+	Note the "true" parameter we are passing into the $watch method.
+	This is because paegComponents is an array, so we need to do a "deep watch" on the entire thing.
+ 	*/
+	$scope.$watch('pc',function(newVal,oldVal){
+		// If we do not have a current component, set it to the first one.
+		if (Object.keys(c.pm.pageComponents).length &gt; 0 &amp;&amp; !c.pm.currentComponent){
+			var currKey = Object.keys(c.pm.pageComponents)[0];
+			c.pm.setCurrent(currKey);
+		}
+	},true);
+	
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.nav-tabs &amp;gt; li &amp;gt; a {&amp;#13;
+      border: 1px solid #ddd !important;&amp;#13;
+      background-color: #e6e6e6;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.nav-tabs &amp;gt; li &amp;gt; a:hover, .nav-tabs &amp;gt; li &amp;gt; a:focus {&amp;#13;
+     background-color: #fff;&amp;#13;
+}&amp;#13;
+&amp;#13;
+.nav-tabs &amp;gt; li.active &amp;gt; a, .nav-tabs &amp;gt; li.active &amp;gt; a:focus {&amp;#13;
+ background-color: #fff; &amp;#13;
+}&amp;#13;
+&amp;#13;
+.nav-tabs &amp;gt; li.active &amp;gt; a:hover {&amp;#13;
+  background-color: lightGray;&amp;#13;
+}&amp;#13;
+.badge {&amp;#13;
+  background-color: darkGray;&amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Page Governor&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 20:08:49&lt;/sys_created_on&gt;&lt;sys_id&gt;212992340fd8f7004e0b489ce1050ea3&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Page Governor&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_212992340fd8f7004e0b489ce1050ea3&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 20:08:49&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+	&lt;!-- If there are no components registered on the page, say so. --&gt;
+  &lt;p ng-if="!c.pm.currentComponent"&gt;No Components&lt;/p&gt;
+	&lt;!-- Here we display a tab for each component registered with our k19PageManager service.
+		We assign an "active" class to the tab if it corresponds to the currentComponent registered with the service.
+		Note that in each list item, we are accessing scope properties directly from the component widgets.
+		In this case, we know something about the components in advance.
+		Can you think of a way to manage this without using properties directly from the component scope?
+		We are using tabs here, but can you think of how you may use this to build a left-hand nav menu? --&gt;
+  &lt;ul class="nav nav-tabs"&gt;
+    &lt;li ng-class="{'active': comp.rectangle_id == c.pm.currentComponent}" ng-repeat="comp in c.pm.pageComponents" ng-click="c.pm.setCurrent(comp.rectangle_id);"&gt;&lt;a href="javascript: void(0)"&gt;{{ comp.data.title }} &lt;span class="badge" ng-if="!!comp.data.recordCount"&gt;{{  comp.data.recordCount  }}&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-725675144</payload_hash>
+<remote_update_set display_value="CCW0014 4 - Lab 4 Content">c62cd6740fd8f7004e0b489ce1050ee2</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:20:43</sys_created_on>
+<sys_id>ce2cd6740fd8f7004e0b489ce1050ee4</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d4566e00000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:20:43</sys_updated_on>
+<table/>
+<target_name>Page Governor</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>f76992349ed8f700be0ff55bf5ea03f7</update_guid>
+<update_guid_history>f76992349ed8f700be0ff55bf5ea03f7:-725675144</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>

@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2019-03-17 20:19:34">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>This update set contains all of the artifacts you shoud have after completing Lab 1.</description>
+<inserted/>
+<name>CCW0014 1 - Lab 1 Content</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value=""/>
+<remote_parent_id/>
+<remote_sys_id>57c60a340f98f7004e0b489ce1050e61</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>9deb1ab40fd8f7004e0b489ce1050e8f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_row_01e98e340f98f7004e0b489ce1050e3b</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_row"><sp_row action="INSERT_OR_UPDATE"><class_name/><order>1</order><sp_column/><sp_container display_value="CMDB Dashboard - Container 1">20e9c2380f98f7004e0b489ce1050e58</sp_container><sys_class_name>sp_row</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 19:00:55</sys_created_on><sys_id>01e98e340f98f7004e0b489ce1050e3b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_row_01e98e340f98f7004e0b489ce1050e3b</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 19:00:55</sys_updated_on></sp_row></record_update>]]></payload>
+<payload_hash>-1158495807</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>11eb1ab40fd8f7004e0b489ce1050e92</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d073b2e0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Row</type>
+<update_domain>global</update_domain>
+<update_guid>85e98e348698f700ef530e1e92cb293c</update_guid>
+<update_guid_history>85e98e348698f700ef530e1e92cb293c:-1158495807</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_instance_table_63decef80f98f7004e0b489ce1050e27</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_table"&gt;&lt;sp_instance_table action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;display_field&gt;os&lt;/display_field&gt;&lt;field_list/&gt;&lt;filter/&gt;&lt;glyph/&gt;&lt;id/&gt;&lt;maximum_entries&gt;5&lt;/maximum_entries&gt;&lt;order&gt;1&lt;/order&gt;&lt;order_by/&gt;&lt;order_direction&gt;asc&lt;/order_direction&gt;&lt;roles/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="1"&gt;81e98e340f98f7004e0b489ce1050e3d&lt;/sp_column&gt;&lt;sp_page/&gt;&lt;sp_widget display_value="Donut Chart 2.0"&gt;34c746740f98f7004e0b489ce1050ea2&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_table&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 19:22:39&lt;/sys_created_on&gt;&lt;sys_id&gt;63decef80f98f7004e0b489ce1050e27&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Windows Servers&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_table_63decef80f98f7004e0b489ce1050e27&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 19:23:24&lt;/sys_updated_on&gt;&lt;table&gt;cmdb_ci_win_server&lt;/table&gt;&lt;title&gt;Windows Servers&lt;/title&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"donut_cutout_percent": {
+		"value": 25,
+		"displayValue": "25"
+	},
+	"arc_percent": {
+		"value": 100,
+		"displayValue": "100"
+	},
+	"rotation_offset": {
+		"value": 0,
+		"displayValue": "0"
+	},
+	"animation_speed": {
+		"value": "750",
+		"displayValue": "750"
+	},
+	"target_page": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_table&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=63decef80f98f7004e0b489ce1050e27"/&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-1694051622</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>15eb1ab40fd8f7004e0b489ce1050e91</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d1bd0450000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table>cmdb_ci_win_server</table>
+<target_name>Windows Servers</target_name>
+<type>Instance with Table</type>
+<update_domain>global</update_domain>
+<update_guid>660f8ef8dc98f7003bb40530d41443b4</update_guid>
+<update_guid_history>660f8ef8dc98f7003bb40530d41443b4:-1694051622,6bdecef8f998f700ad6bbc6e258c4a28:-35711233</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_widget_dependency_686cce780f98f7004e0b489ce1050e5d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency"><m2m_sp_widget_dependency action="INSERT_OR_UPDATE"><sp_dependency display_value="Angular Chart JS 2.X">aa278e340f98f7004e0b489ce1050e32</sp_dependency><sp_widget display_value="Donut Chart 2.0">34c746740f98f7004e0b489ce1050ea2</sp_widget><sys_class_name>m2m_sp_widget_dependency</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 19:11:47</sys_created_on><sys_id>686cce780f98f7004e0b489ce1050e5d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Angular Chart JS 2.X.Donut Chart 2.0</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_widget_dependency_686cce780f98f7004e0b489ce1050e5d</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 19:11:47</sys_updated_on></m2m_sp_widget_dependency></record_update>]]></payload>
+<payload_hash>1107080844</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>19eb1ab40fd8f7004e0b489ce1050e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d1130e30000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>Angular Chart JS 2.X.Donut Chart 2.0</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>646cce78f798f70023ba96eebcfae25f</update_guid>
+<update_guid_history>646cce78f798f70023ba96eebcfae25f:1107080844</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_dependency_aa278e340f98f7004e0b489ce1050e32</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_dependency"><sp_dependency action="INSERT_OR_UPDATE"><module>angular-chart-js-2-x</module><name>Angular Chart JS 2.X</name><page_load>false</page_load><sp_portals/><sys_class_name>sp_dependency</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 18:49:48</sys_created_on><sys_id>aa278e340f98f7004e0b489ce1050e32</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Angular Chart JS 2.X</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_dependency_aa278e340f98f7004e0b489ce1050e32</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 18:49:48</sys_updated_on></sp_dependency></record_update>]]></payload>
+<payload_hash>1204042120</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>51eb1ab40fd8f7004e0b489ce1050e91</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698cfd102c0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>Angular Chart JS 2.X</target_name>
+<type>Widget Dependency</type>
+<update_domain>global</update_domain>
+<update_guid>e657ce34f098f700728818968f4914fe</update_guid>
+<update_guid_history>e657ce34f098f700728818968f4914fe:1204042120</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_ad7742740f98f7004e0b489ce1050e72</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>100</order><sp_dependency display_value="Angular Chart JS 2.X">aa278e340f98f7004e0b489ce1050e32</sp_dependency><sp_js_include display_value="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js">335702740f98f7004e0b489ce1050e79</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 18:50:18</sys_created_on><sys_id>ad7742740f98f7004e0b489ce1050e72</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Angular Chart JS 2.X.https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_ad7742740f98f7004e0b489ce1050e72</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 18:50:18</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>499206662</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>55eb1ab40fd8f7004e0b489ce1050e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698cfd83730000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>Angular Chart JS 2.X.https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>f57742743298f700869f3e6e1f26c574</update_guid>
+<update_guid_history>f57742743298f700869f3e6e1f26c574:499206662</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_page_b9990ef40f98f7004e0b489ce1050eaf</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page"><sp_page action="INSERT_OR_UPDATE"><category>custom</category><css/><draft>false</draft><dynamic_title_structure/><id>k19_cmdb_dashboard</id><internal>false</internal><public>false</public><roles/><short_description/><sys_class_name>sp_page</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 19:00:28</sys_created_on><sys_id>b9990ef40f98f7004e0b489ce1050eaf</sys_id><sys_mod_count>0</sys_mod_count><sys_name>k19_cmdb_dashboard</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_page_b9990ef40f98f7004e0b489ce1050eaf</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 19:00:28</sys_updated_on><title>CMDB Dashboard</title></sp_page><sys_translated_text action="delete_multiple" query="documentkey=b9990ef40f98f7004e0b489ce1050eaf"/></record_update>]]></payload>
+<payload_hash>1900837848</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>5deb1ab40fd8f7004e0b489ce1050e91</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d06d48b0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>k19_cmdb_dashboard</target_name>
+<type>Page</type>
+<update_domain>global</update_domain>
+<update_guid>76c98ef45098f7000bfffdf7f60b09e1</update_guid>
+<update_guid_history>76c98ef45098f7000bfffdf7f60b09e1:1900837848</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>m2m_sp_dependency_js_include_7e874e340f98f7004e0b489ce1050e4e</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_dependency_js_include"><m2m_sp_dependency_js_include action="INSERT_OR_UPDATE"><order>200</order><sp_dependency display_value="Angular Chart JS 2.X">aa278e340f98f7004e0b489ce1050e32</sp_dependency><sp_js_include display_value="https://cdn.jsdelivr.net/angular.chartjs/1.1.1">5f77caf00f98f7004e0b489ce1050e67</sp_js_include><sys_class_name>m2m_sp_dependency_js_include</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 18:50:39</sys_created_on><sys_id>7e874e340f98f7004e0b489ce1050e4e</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Angular Chart JS 2.X.https://cdn.jsdelivr.net/angular.chartjs/1.1.1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>m2m_sp_dependency_js_include_7e874e340f98f7004e0b489ce1050e4e</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 18:50:50</sys_updated_on></m2m_sp_dependency_js_include></record_update>]]></payload>
+<payload_hash>40890212</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>91eb1ab40fd8f7004e0b489ce1050e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698cfe017c0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>Angular Chart JS 2.X.https://cdn.jsdelivr.net/angular.chartjs/1.1.1</target_name>
+<type>Dependency JS Includes</type>
+<update_domain>global</update_domain>
+<update_guid>699782748d98f70015b0ce26d49e0cdd</update_guid>
+<update_guid_history>699782748d98f70015b0ce26d49e0cdd:40890212,fe874e341798f700710415e8f56e904f:1342804293</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_5f77caf00f98f7004e0b489ce1050e67</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>https://cdn.jsdelivr.net/angular.chartjs/1.1.1</display_name><source>url</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 18:50:39</sys_created_on><sys_id>5f77caf00f98f7004e0b489ce1050e67</sys_id><sys_mod_count>0</sys_mod_count><sys_name>https://cdn.jsdelivr.net/angular.chartjs/1.1.1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script/><sys_update_name>sp_js_include_5f77caf00f98f7004e0b489ce1050e67</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 18:50:39</sys_updated_on><url>https://cdn.jsdelivr.net/angular.chartjs/1.1.1</url></sp_js_include></record_update>]]></payload>
+<payload_hash>1906934862</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>99eb1ab40fd8f7004e0b489ce1050e91</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698cfdd6640000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>https://cdn.jsdelivr.net/angular.chartjs/1.1.1</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>b2874e344f98f7004e529fe82d4bce4e</update_guid>
+<update_guid_history>b2874e344f98f7004e529fe82d4bce4e:1906934862</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_container_20e9c2380f98f7004e0b489ce1050e58</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color/><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>CMDB Dashboard - Container 1</name><order>1</order><sp_page display_value="k19_cmdb_dashboard">b9990ef40f98f7004e0b489ce1050eaf</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 19:00:52</sys_created_on><sys_id>20e9c2380f98f7004e0b489ce1050e58</sys_id><sys_mod_count>0</sys_mod_count><sys_name>CMDB Dashboard - Container 1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_container_20e9c2380f98f7004e0b489ce1050e58</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 19:00:52</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+<payload_hash>1599963968</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>9deb1ab40fd8f7004e0b489ce1050e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d0731b80000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>CMDB Dashboard - Container 1</target_name>
+<type>Container</type>
+<update_domain>global</update_domain>
+<update_guid>e4e9c238cc98f700b9146ec83f5cfc59</update_guid>
+<update_guid_history>e4e9c238cc98f700b9146ec83f5cfc59:1599963968</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_widget_34c746740f98f7004e0b489ce1050ea2</name>
+<payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function(spUtil,$scope,$rootScope,$location) {
+  /* widget controller */
+  var c = this;
+
+  // Here we define how the chart legend is displayed. How might you make this configurable?
+  c.data.chartLegend = {
+    display:true,
+    position:'bottom',
+    labels:{
+      boxWidth:15
+    }
+  };
+
+  // Here we are building our chart options. This controls the visual display and animations for the chart.
+  c.data.chartOptions = {
+    rotation:((-0.5 + (-c.data.options.chartRotation)/50)*Math.PI),
+    circumference:2*(c.data.options.chartCircumference/100)*Math.PI,
+    legend:c.data.chartLegend,
+    animation:{
+      duration: c.data.options.animate,
+      easing:'easeOutBounce'
+    },
+    cutoutPercentage:c.data.options.donut_cutout
+  };
+
+  // If we have a lot of text in our legend labels, decrease the font size for better display.
+  if (c.data.chartLabels.toString().length &gt; 250){
+    c.data.chartLegend.labels.fontSize = 10;
+  }
+
+  // Here we define what happens when you click on the chart. The points argument contains information about the area that was clicked, and the evt argument contains information about the event itself. 
+  c.onClick = function (points, evt) {
+
+    // Check to see if we have anything in the points array
+    if (points.length &gt; 0){
+      // The first member of the points array contains information about the portion of the chart we clicked. The _model property does not contain a "value," just a label which is why we built the "chartLookup" object to index based on display value.  
+      var filt = (!!c.data.options.filter ? c.data.options.filter + '^' : '') + c.data.options.display_field + c.data.chartLookup[points[0]._model.label];
+      
+      // Now we build an object for the click target. This will be used to add parameters to the URL location
+      var targObj = {
+        id: c.data.targetPage,
+        table:c.data.options.table,
+        filter:filt,
+        previous_id:c.data.currentPage,
+        view:'sp'
+      };
+      $location.search(targObj);
+    }
+
+  };
+
+  // We want to watch for any changes, so we will use the recordWatch functionality to keep the chart up to date
+  if (!!c.data.options.table){
+    spUtil.recordWatch($scope,c.data.options.table,c.data.options.filter);
+  }
+
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;div.chartContainer {&amp;#13;
+  max-width: 500px;&amp;#13;
+  padding: 8px;&amp;#13;
+  margin: auto !important; &amp;#13;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance_table&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;title,table,filter,display_field&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;donut-chart-20&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]&gt;&lt;/link&gt;&lt;name&gt;Donut Chart 2.0&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Size of the “donut hole,” default is 50%","name":"donut_cutout_percent","section":"Presentation","label":"Donut Cutout Percent","type":"integer"},{"hint":"Percent of a circle the chart should consume. Min 25%","name":"arc_percent","section":"Presentation","label":"Arc Percent","type":"integer"},{"hint":"Percentage to rotate the chart from 0 degrees vertical","name":"rotation_offset","section":"Presentation","label":"Rotation Offset","type":"integer"},{"hint":"Number of milliseconds it takes to animate the chart","name":"animation_speed","section":"Presentation","label":"Animation Speed","type":"choice","choices":[{"label":"0","value":"0"},{"label":"500","value":"500"},{"label":"750","value":"750"},{"label":"1000","value":"1000"},{"label":"1250","value":"1250"},{"label":"1500","value":"1500"}]},{"hint":"Identify the page to target when the chart is clicked. Default is “list”","name":"target_page","section":"Behavior","label":"Target Page","type":"string"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+  // Instantiate a container for our chart options. We will get these from the widget instance options.
+  data.options = {};
+
+  // Here we define the table, "group by" field, and initial filter for the chart
+  var table = $sp.getValue('table') || options.table;
+  var field = $sp.getValue('display_field') || options.display_field;
+  var filter = $sp.getValue('filter') || options.filter;
+
+  data.currentPage = $sp.getParameter('id');
+  
+  // Instantiate axis labels and data containers.
+  data.chartLabels = [];
+  data.chartData = [];
+  
+  // We will need to make an index of field values to query conditions. We will need this for the click actions on our chart; when you click the chart, we will get the query value to send to the list based on the value of the slice you clicked.
+  data.chartLookup = {};
+  
+  // We can either specify a target page for our chart, or default to the "list" page
+  data.targetPage = options.target_page || 'list';
+
+  // Here we start setting our chart options. Note the defaults in case you do not enter any instance options
+  // Animation Speed, default 1000
+  data.options.animate = parseInt(options.animation_speed);
+  if (isNaN(parseInt(data.options.animate))){
+    data.options.animate = 1000;
+  }
+
+  // donut_coutout_percent, default 50, min 0, max 90
+  data.options.donut_cutout = options.donut_cutout_percent;
+  data.options.orig_cutout = data.options.donut_cutout;
+  if (isNaN(parseInt(data.options.donut_cutout)) || data.options.donut_cutout &lt; 0 || data.options.donut_cutout &gt; 90){
+    data.options.donut_cutout = 50;
+  }
+
+  // Arc percent, default 0
+  data.options.chartRotation = options.rotation_offset || 0;
+
+  // Chart circumference, default 100. Min 25, max 100.
+  data.options.circ = options.arc_percent;
+  data.options.chartCircumference = parseInt(options.arc_percent) || 100;
+  if (isNaN(parseInt(data.options.chartCircumference)) || data.options.chartCircumference &lt; 25 || data.options.chartCircumference &gt; 100){
+    data.options.chartCircumference = 100;
+  }
+
+  // We can use the built-in chart colors settings. This allows you to define colors per table to be used in this or other out-of-the-box rerports
+  function getColors(tbl,fld){
+    var retArr = [];
+    var g_colors = new GlideChartFieldColors(tbl,fld);
+    data.chartLabels.forEach(function(lbl){
+      var val = data.chartLookup[lbl];
+      var col = val.split('=');
+      col = (col.length &gt; 1 ? col[1] : col[0]).toString();
+      retArr.push(g_colors.get(col));
+    });
+
+    console.log(retArr);
+
+    return retArr;
+  }
+
+  // If we have defined a table and field for this widget in the instance options, get the data to build the chart
+  if (!!table &amp;&amp; !!field){
+
+
+    data.options.chartTitle = $sp.getValue('title') || options.title;
+
+    data.options.table = table;
+    data.options.display_field = field;
+    data.options.filter = filter;
+
+    var ga = new GlideAggregate(table);
+    ga.addAggregate('COUNT',field);
+    ga.orderByAggregate('COUNT',field);
+    ga.addEncodedQuery(filter);
+    ga.query();
+
+    var oth = 0;
+    var othItems = [];
+
+    // We are setting a hard limit of 12 items for an "other" group. How might you make this configurable?
+    while (ga.next() &amp;&amp; oth &lt; 12){
+      var disp = !!ga.getDisplayValue(field) ? ga.getDisplayValue(field) : '(Empty)';
+      data.chartLabels.push(disp);
+      data.chartLookup[disp] = '=' + ga.getValue(field);
+      othItems.push(ga.getValue(field));
+      data.chartData.push(ga.getAggregate('COUNT',field));
+      oth++;
+    }
+
+    // If we have reached our threshold for "Other," then our query should be anything that does not match what we have used so far
+    if (oth == 12){
+      var gr = new GlideRecord(table);
+      gr.addEncodedQuery(filter);
+      gr.addQuery(field,'NOT IN',othItems.toString());
+      gr.query();
+
+      if (gr.getRowCount() &gt; 0){
+        data.chartLabels.push('Other');
+        data.chartLookup['Other'] = 'NOT IN' + othItems;
+        data.chartData.push(gr.getRowCount());
+      }
+    }
+
+    data.chartColors = getColors(table,field);
+
+  }
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;nicholas.yancer&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2019-03-17 18:52:52&lt;/sys_created_on&gt;&lt;sys_id&gt;34c746740f98f7004e0b489ce1050ea2&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Donut Chart 2.0&lt;/sys_name&gt;&lt;sys_package display_value="Global" source="global"&gt;global&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_34c746740f98f7004e0b489ce1050ea2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;nicholas.yancer&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2019-03-17 19:08:43&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="chartContainer"&gt;
+  &lt;h3 class="text-center" ng-if="!!c.data.options.chartTitle"&gt;{{ c.data.options.chartTitle }}&lt;/h3&gt;
+  &lt;canvas ng-if="!!c.data.chartData" id="pie" class="chart chart-doughnut" chart-data="c.data.chartData" chart-options="c.data.chartOptions" chart-labels="c.data.chartLabels" chart-click="c.onClick" chart-colors="c.data.chartColors"&gt;
+  &lt;/canvas&gt;
+  &lt;p ng-if="c.data.chartData == ''"&gt;No data to display&lt;/p&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+<payload_hash>-2085368637</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>d1eb1ab40fd8f7004e0b489ce1050e92</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d0e61650000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>Donut Chart 2.0</target_name>
+<type>Widget</type>
+<update_domain>global</update_domain>
+<update_guid>e3abc678ba98f700f158d12ab371a2f3</update_guid>
+<update_guid_history>e3abc678ba98f700f158d12ab371a2f3:-2085368637,c459ca745198f70040d35a9734e3e36b:-807268174,df08c274ec98f7001201095656c5afb3:428825034</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_js_include_335702740f98f7004e0b489ce1050e79</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_js_include"><sp_js_include action="INSERT_OR_UPDATE"><display_name>https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js</display_name><source>url</source><sys_class_name>sp_js_include</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 18:50:18</sys_created_on><sys_id>335702740f98f7004e0b489ce1050e79</sys_id><sys_mod_count>0</sys_mod_count><sys_name>https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_ui_script/><sys_update_name>sp_js_include_335702740f98f7004e0b489ce1050e79</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 18:50:18</sys_updated_on><url>https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js</url></sp_js_include></record_update>]]></payload>
+<payload_hash>1772251123</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>d5eb1ab40fd8f7004e0b489ce1050e91</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698cfd832d0000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js</target_name>
+<type>JS Include</type>
+<update_domain>global</update_domain>
+<update_guid>ad7742709d54f7005023f840bfa8b09c</update_guid>
+<update_guid_history>ad7742709d54f7005023f840bfa8b09c:1772251123</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sp_column_81e98e340f98f7004e0b489ce1050e3d</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_column"><sp_column action="INSERT_OR_UPDATE"><class_name/><order>1</order><size>12</size><size_lg/><size_sm/><size_xs/><sp_row display_value="1">01e98e340f98f7004e0b489ce1050e3b</sp_row><sys_class_name>sp_column</sys_class_name><sys_created_by>nicholas.yancer</sys_created_by><sys_created_on>2019-03-17 19:00:55</sys_created_on><sys_id>81e98e340f98f7004e0b489ce1050e3d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>1</sys_name><sys_package display_value="Global" source="global">global</sys_package><sys_policy/><sys_scope display_value="Global">global</sys_scope><sys_update_name>sp_column_81e98e340f98f7004e0b489ce1050e3d</sys_update_name><sys_updated_by>nicholas.yancer</sys_updated_by><sys_updated_on>2019-03-17 19:00:55</sys_updated_on></sp_column></record_update>]]></payload>
+<payload_hash>1259716832</payload_hash>
+<remote_update_set display_value="CCW0014 1 - Lab 1 Content">9deb1ab40fd8f7004e0b489ce1050e8f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>nicholas.yancer</sys_created_by>
+<sys_created_on>2019-03-17 20:19:34</sys_created_on>
+<sys_id>d9eb1ab40fd8f7004e0b489ce1050e90</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>1698d073b570000001</sys_recorded_at>
+<sys_updated_by>nicholas.yancer</sys_updated_by>
+<sys_updated_on>2019-03-17 20:19:34</sys_updated_on>
+<table/>
+<target_name>1</target_name>
+<type>Column</type>
+<update_domain>global</update_domain>
+<update_guid>85e9c238e998f700e3434dee7f3d8e71</update_guid>
+<update_guid_history>85e9c238e998f700e3434dee7f3d8e71:1259716832</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
