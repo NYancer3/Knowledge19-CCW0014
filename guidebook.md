@@ -1299,43 +1299,43 @@ Now that we have a lot of good information on our page, we need to make it more 
     ```
     4. Client controller
     ```javascript
-	/*
+	function(k19PageManager,$scope) {
+		/*
 		Note that we are injecting a dependency for the k19PageManager service.
 		Don't forget to add this dependency to the related list for the widget!
-	*/
-    function(k19PageManager,$scope) {
-      /* widget controller */
-      var c = this;
+		*/
+		/* widget controller */
+		var c = this;
 
 		// Create a local reference to the k19PageManager service for convenience and to use in the HTML template.
-        c.pm = k19PageManager;
+		c.pm = k19PageManager;
 
-        // reset on page load
-        c.pm.reset();
+		// reset on page load
+		c.pm.reset();
 
-        /*
-			Bind the service's pageComponents property to a local scope property.
-			This is mainly for convenience. See how much shorter it is?
-			I'm too lazy to type out the whole thing every time I need to refere to it.
-			
-			It also allows us to use $scope.$watch() to react to changes. Which is useful, too, I guess.
+		/*
+		Bind the service's pageComponents property to a local scope property.
+		This is mainly for convenience. See how much shorter it is?
+		I'm too lazy to type out the whole thing every time I need to refere to it.
+
+		It also allows us to use $scope.$watch() to react to changes. Which is useful, too, I guess.
 		*/
 		$scope.pc = c.pm.pageComponents;
 
 		/*
-			Watch for changes to the service's pageComponents property.
-			Note the "true" parameter we are passing into the $watch method.
-			This is because paegComponents is an array, so we need to do a "deep watch" on the entire thing.
+		Watch for changes to the service's pageComponents property.
+		Note the "true" parameter we are passing into the $watch method.
+		This is because paegComponents is an array, so we need to do a "deep watch" on the entire thing.
 		*/
-        $scope.$watch('pc',function(newVal,oldVal){
-            // If we do not have a current component, set it to the first one.
-            if (Object.keys(c.pm.pageComponents).length > 0 && !c.pm.currentComponent){
-                var currKey = Object.keys(c.pm.pageComponents)[0];
-                c.pm.setCurrent(currKey);
-            }
-        },true);
+		$scope.$watch('pc',function(newVal,oldVal){
+			// If we do not have a current component, set it to the first one.
+			if (Object.keys(c.pm.pageComponents).length > 0 && !c.pm.currentComponent){
+				var currKey = Object.keys(c.pm.pageComponents)[0];
+				c.pm.setCurrent(currKey);
+			}
+		},true);
 
-    }
+	}
     ```
 1. Select **Submit**
 1. Search for and open the **Page Governor** widget you just created
