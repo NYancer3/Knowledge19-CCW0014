@@ -880,7 +880,7 @@ Learn how to use events to pass data between different widgets on a page.
 
     }
     ```
-    4. Option schema (we are adding an option called Event Driven to the schema): 
+    4. Option schema (we are adding an option called Event Driven to the schema, the last one): 
     *(Note: this can also be updated in the Widget Editor using the Edit Option Schema as done in LAB 1)*
     ```javascript
     [
@@ -944,21 +944,16 @@ Learn how to use events to pass data between different widgets on a page.
 			"section":"Behavior",
 			"label":"Target Page",
 			"type":"string"
-		},
-		/*
-			LAB 3: New instance option "Event-Driven"
-			Allows you to select whether you want the widget to emit an event when the chart is clicked or to navigate to another page.
-		*/
-		{
+		},{
 			"hint":"Indicate whether you want to emit an event when the chart is clicked or navigate to another page",
 			"name":"event_driven",
 			"section":"Behavior",
 			"label":"Event Driven",
 			"type":"boolean"
 		}
-		/* END LAB 3 CHANGES */
 	]
     ```
+1. Click **Update**
 1. Navigate to **Service Portal** > **Widgets**
 1. Open the **Combined Donut and Table** widget you created previously
 1. Update the form as follows:
@@ -1074,7 +1069,7 @@ Learn how to use events to pass data between different widgets on a page.
 		/* END LAB 3 CHANGES */
 	}
 	```
-    3. Option schema (we are adding an option called Event Driven to the schema): 
+    3. Option schema (we are adding an option called Event Driven to the schema, the last one): 
     *(Note: this can also be updated in the Widget Editor using the Edit Option Schema as done in LAB 1)*
     ```javascript
 	[
@@ -1138,20 +1133,16 @@ Learn how to use events to pass data between different widgets on a page.
 			"section":"Behavior",
 			"label":"Target Page",
 			"type":"string"
-		},
-		/*
-			LAB 3: This is our new instance option.
-		*/
-		{
+		},{
 			"hint":"Indicate whether you want to emit an event when the chart is clicked or navigate to another page",
 			"name":"event_driven",
 			"section":"Behavior",
 			"label":"Event Driven",
 			"type":"boolean"
 		}
-		/* END LAB 3 CHANGES */
 	]
     ```
+1. Click **Update**
 1. Navigate to **Service Portal** > **Pages**
 1. Location and open the **CMDB Dashboard** page you created previously
 1. Under Related Links, select **Open in Designer**
@@ -1224,13 +1215,15 @@ Understand **Angular Providers** and how to incorporate their functionality into
     1. Animation Speed:  **500**
     1. Event Driven: **true** (checked)
 1. Select **Save**
+
+_Take a look at the page to see what you've got. Make sure that each instance of the chart/table only responds to its own toggle switch and chart/table click events._ 
 ## That's nice, but I *HATE* Scrolling. Bring on the Tabs!
 Now that we have a lot of good information on our page, we need to make it more presentable. What if we could show one of the widgets at a time and use navigation to browse through them? Well, you know what we're about to do...
 1. Navigate to **Service Portal** > **Angular Providers**
 1. Select **New**
 1. Fill out the form as follows:
     1. Type: **Service**
-    2. Name: **k18PageManager**
+    2. Name: **k19PageManager**
     3. Client Script:
     ```javascript
     function(){
@@ -1271,7 +1264,7 @@ Now that we have a lot of good information on our page, we need to make it more 
     <div>
 		<!-- If there are no components registered on the page, say so. -->
       <p ng-if="!c.pm.currentComponent">No Components</p>
-		<!-- Here we display a tab for each component registered with our k18PageManager service.
+		<!-- Here we display a tab for each component registered with our k19PageManager service.
 			We assign an "active" class to the tab if it corresponds to the currentComponent registered with the service.
 			Note that in each list item, we are accessing scope properties directly from the component widgets.
 			In this case, we know something about the components in advance.
@@ -1307,15 +1300,15 @@ Now that we have a lot of good information on our page, we need to make it more 
     4. Client controller
     ```javascript
 	/*
-		Note that we are injecting a dependency for the k18PageManager service.
+		Note that we are injecting a dependency for the k19PageManager service.
 		Don't forget to add this dependency to the related list for the widget!
 	*/
-    function(k18PageManager,$scope) {
+    function(k19PageManager,$scope) {
       /* widget controller */
       var c = this;
 
-		// Create a local referernce to the k18PageManager service for convenience and to use in the HTML template.
-        c.pm = k18PageManager;
+		// Create a local reference to the k19PageManager service for convenience and to use in the HTML template.
+        c.pm = k19PageManager;
 
         // reset on page load
         c.pm.reset();
@@ -1347,7 +1340,7 @@ Now that we have a lot of good information on our page, we need to make it more 
 1. Select **Submit**
 1. Search for and open the **Page Governor** widget you just created
 1. Under the Angular Providers related list, select **Edit**
-1. Locate the **k18PageManager** dependency in the “Collection” container (left)
+1. Locate the **k19PageManager** dependency in the “Collection” container (left)
 1. Add it to the “Angular Providers List” container (right)
 1. Select **Save**
 ## We Have Tabs, Now Let's Corral Them Widgets!
@@ -1387,10 +1380,10 @@ Now that we have a lot of good information on our page, we need to make it more 
     2. Client Controller:
     ```javascript
 	/*
-		LAB 4: We are adding dependencies to the k18PageManager service as well as the $http service.
-		Do not forget to add the k18PageManager service to the dependencies related list on the widget!
+		LAB 4: We are adding dependencies to the k19PageManager service as well as the $http service.
+		Do not forget to add the k19PageManager service to the dependencies related list on the widget!
 	*/
-	function ($scope, spUtil, $location, spAriaFocusManager, k18PageManager,$http) {
+	function ($scope, spUtil, $location, spAriaFocusManager, k19PageManager,$http) {
 	/* END LAB 4 CHANGES */
 
 	/* This is the original code copied from the data table widget */
@@ -1409,9 +1402,9 @@ Now that we have a lot of good information on our page, we need to make it more 
 	/* END LAB 3 CHANGES */
 
 	/*
-		LAB 4: This is where we really start interacting with the k18PageManager service.
+		LAB 4: This is where we really start interacting with the k19PageManager service.
 		There is not much to it. We are going to create and store a recordCount poroperty in our scope, which will be read by the Page Governor widget we created in the last step.
-		Then, we register the widget with the k18PageManager service. The other widgets will do the rest.
+		Then, we register the widget with the k19PageManager service. The other widgets will do the rest.
 		Later, we will just need to keep the record count up to date.
 	*/
 		var c = this;
@@ -1419,10 +1412,10 @@ Now that we have a lot of good information on our page, we need to make it more 
 		// Get record count to send up to the tabs
 		$scope.data.recordCount = 0;
 
-		c.pm = k18PageManager;
+		c.pm = k19PageManager;
 
 		// Register ourselves with the Page Manager service.
-		k18PageManager.registerComponent(this.widget);
+		k19PageManager.registerComponent(this.widget);
 
 	/* END LAB 4 CHANGES */
 
@@ -1513,7 +1506,7 @@ Now that we have a lot of good information on our page, we need to make it more 
 1. Select **Update**
 1. Locate and open the **Combined Donut and Table** widget you just updated *(note that instead of updating and navigating back, you can always just right-click in the header and select **Save** to stay on the record; but you probably already knew that)*
 1. Under the Angular Providers related list, select **Edit**
-1. Locate the **k18PageManager** dependency in the “Collection” container (left)
+1. Locate the **k19PageManager** dependency in the “Collection” container (left)
 1. Add it to the “Angular Providers List” container (right)
 1. Select **Save**
 1. Navigate to **Service Portal** > **Pages**
