@@ -222,6 +222,7 @@ Understand **Widget Dependencies** and how they can be used to provide functiona
 
     }
     ```
+1. Click **Submit**
 ## Let's Make the Widget Reusable by Adding Options
 1. Open the **Donut Chart 2.0** widget record (if you were not directed there from the previous step)
 1. Scroll to the “Related Links” section of the form and click **Open in Widget Editor**
