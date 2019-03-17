@@ -222,7 +222,14 @@ Understand **Widget Dependencies** and how they can be used to provide functiona
 
     }
     ```
+    1. Data table: **Instance with Table [sp_instance_table]**
+	1. Fields: **Title, Table, Filter, Display Field**
 1. Click **Submit**
+## Now Add the Dependency to the Widget
+1. Open the **Donut Chart 2.0** widget record
+1. Scroll to the **Dependencies** related list at the bottom of the form and click **Edit...**
+1. Move the **Angular Chart JS 2.X** dependency you created in the first step from the left-hand column to the right-hand column
+1. Click **Save**
 ## Let's Make the Widget Reusable by Adding Options
 1. Open the **Donut Chart 2.0** widget record (if you were not directed there from the previous step)
 1. Scroll to the “Related Links” section of the form and click **Open in Widget Editor**
@@ -277,7 +284,7 @@ Understand **Widget Dependencies** and how they can be used to provide functiona
 1. Select **New**
 1. Fill in the form as follows:
     1. Title: **CMDB Dashboard**
-    1. ID: **k18_cmdb_dashboard**
+    1. ID: **k19_cmdb_dashboard**
 1. Select **Submit**
 1. Open the new **CMDB Dashboard** page
 1. Under the Related Links section, select **Open in Designer** (New tab will open)
@@ -292,7 +299,7 @@ Understand **Widget Dependencies** and how they can be used to provide functiona
     1. Donut Cutout Percent: **25**
     1. Arc Percent: **100**
     1. Rotation Offset: **0**
-    1. Animation Speed: **75**
+    1. Animation Speed: **750**
 1. Select **Save**
 ## See What You Just Built!
 In the upper right hand corner select the *Open in New Window* icon (![Open Page in New Tab](/images/open_page_v1.jpg)) to open your page in a new window
