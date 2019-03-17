@@ -559,7 +559,7 @@ Okay, we've now got two widgets on the page. Wouldn't it be nice if we could sho
     ```
 1. Select **Update**
 ## Try it out!
-1. Navigate back to the **CMDB Dashboard** page (the url should be https://[your-instance-url]/sp?id=k18_cmdb_dashboard). If you already have it open in another tab or window, refresh the page.
+1. Navigate back to the **CMDB Dashboard** page (the url should be https://[your-instance-url]/sp?id=k19_cmdb_dashboard). If you already have it open in another tab or window, refresh the page.
 1. You should now see something like the following:
 ![CMDB Dashboard Chart Only](/images/cmdb_dashboard_2_v1.png)
 1. Click the “Chart or Table” toggle to change it to **Table**. Your page should now look something like the following:
@@ -1159,7 +1159,7 @@ Learn how to use events to pass data between different widgets on a page.
 1. Locate the **Event Driven** option and check the box
 1. Select **Save**
 ## Try it out!
-1. Navigate back to the **CMDB Dashboard** page (the url should be https://[your-instance-url]/sp?id=k18_cmdb_dashboard). If you already have it open in another tab or window, refresh the page
+1. Navigate back to the **CMDB Dashboard** page (the url should be https://[your-instance-url]/sp?id=k19_cmdb_dashboard). If you already have it open in another tab or window, refresh the page
 1. When you click a section of the chart, the toggle should switch to **Table** and the data table should be visible and filtered to correspond to the portion of the chart that you clicked
 1. When you click an item in the table, the corresponding record should open in a modal window
 
@@ -1524,7 +1524,7 @@ Now that we have a lot of good information on our page, we need to make it more 
 1. Start typing **Page Governor** into the *Filter Widget* field
 1. Drag and drop the **Page Governor** widget into the column you just added
 ## Try it out!
-1. Navigate back to the CMDB Dashboard page (the url should be https://[your-instance-url]/sp?id=k18_cmdb_dashboard). If you already have it open in another tab or window, refresh the page.
+1. Navigate back to the CMDB Dashboard page (the url should be https://[your-instance-url]/sp?id=k19_cmdb_dashboard). If you already have it open in another tab or window, refresh the page.
 1. You should now have a fully functional single-page app!
 1. Each tab will show its corresponding chart/table widget
 1. Clicking on the chart will flip to the table and apply a filter corresponding to the slice you clicked
