@@ -1379,11 +1379,11 @@ Now that we have a lot of good information on our page, we need to make it more 
     ```
     2. Client Controller:
     ```javascript
+	function ($scope, spUtil, $location, spAriaFocusManager, k19PageManager,$http) {
 	/*
 		LAB 4: We are adding dependencies to the k19PageManager service as well as the $http service.
 		Do not forget to add the k19PageManager service to the dependencies related list on the widget!
 	*/
-	function ($scope, spUtil, $location, spAriaFocusManager, k19PageManager,$http) {
 	/* END LAB 4 CHANGES */
 
 	/* This is the original code copied from the data table widget */
