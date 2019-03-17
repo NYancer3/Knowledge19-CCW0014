@@ -456,8 +456,9 @@ Okay, we've now got two widgets on the page. Wouldn't it be nice if we could sho
     1. Display name: **Toggle Switch JS**
     2. Source: **UI Script**
     3. UI Script: [Click the Magnifying Glass > Select New]
-        1. API Name: **toggleSwitch**
-        2. Script:
+    	1. API Name: **toggleSwitch**
+	2. UI Type: **Mobile/ Service Portal**
+        3. Script:
         ```javascript
         angular.module('css-toggle-switch',[]).directive('toggleSwitch',[function(){
             // We can define default values in order to make certian directive attributes optional
